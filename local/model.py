@@ -122,4 +122,4 @@ class SetModel(TransformRequest):
         """
         X = TransformRequest.DeckToList(request)
         X = SetModel.Solve(np.array(X))
-        return X
+        return X.tolist()
